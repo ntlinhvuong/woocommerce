@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+@mixin max_width($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin generateDot($size, $bacground, $spacing, $columns, $rows) {
+  width: $size;
+  height: $size;
+  background-color: $bacground;
+  border-radius: 100rem;
+  $value: ();
+
+  @for $i from 0 to $rows {
+    @for $j from 0 to $columns {
+      $x: $i * $spacing + px;
+      $y: $j * $spacing + px;
+      $theShadow: $x $y $bacground;
+      $value: append($value, $theShadow, comma);
+    }
+  }
+  box-shadow: $value;
+}
+.container {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  @include max-width(1250px) {
+    max-width: 90%;
+  }
+  @include max-width(1100px) {
+    max-width: 95%;
+  }
+}
+h2 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 70px;
+  text-align: center;
+  color: #272d4e;
+  @include max-width(580px) {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
