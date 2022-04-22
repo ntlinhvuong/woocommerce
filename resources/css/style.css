@@ -2073,32 +2073,22 @@ h2 {
 }
 @media only screen and (max-width: 403px) {
   .people {
+    height: 530px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .people {
     height: 550px;
   }
 }
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 360px) {
   .people {
-    height: 590px;
+    height: 530px;
   }
 }
-@media only screen and (max-width: 368px) {
+@media only screen and (max-width: 280px) {
   .people {
-    height: 620px;
-  }
-}
-@media only screen and (max-width: 355px) {
-  .people {
-    height: 630px;
-  }
-}
-@media only screen and (max-width: 304px) {
-  .people {
-    height: 640px;
-  }
-}
-@media only screen and (max-width: 396px) {
-  .people {
-    height: 680px;
+    height: 650px;
   }
 }
 .people .title h2 {

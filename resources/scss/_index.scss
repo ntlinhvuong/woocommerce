@@ -1494,22 +1494,16 @@
     height: 540px;
   }
   @include max-width(403px) {
+    height: 530px;
+  }
+  @include max-width(376px) {
     height: 550px;
   }
-  @include max-width(374px) {
-    height: 590px;
+  @include max-width(360px) {
+    height: 530px;
   }
-  @include max-width(368px) {
-    height: 620px;
-  }
-  @include max-width(355px) {
-    height: 630px;
-  }
-  @include max-width(304px) {
-    height: 640px;
-  }
-  @include max-width(396px) {
-    height: 680px;
+  @include max-width(280px) {
+    height: 650px;
   }
   .title {
     h2 {
